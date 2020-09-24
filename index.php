@@ -49,6 +49,16 @@ and open the template in the editor.
         $third->add_status('status', 'Freshman');
         $students['z789'] = $third;
 
+        $fourth = new Student();
+        $fourth->surname = "Wen";
+        $fourth->first_name = "Donghuan";
+        $fourth->add_email('home', '1342285933@qq.com');
+        $fourth->add_email('work1', '1342285933@163.com');
+        $fourth->add_grade(95);
+        $fourth->add_grade(70);
+        $fourth->add_grade(60);
+        $fourth->add_status('status', 'Sophomore');
+        $students['w101'] = $fourth;
 
         ksort($students);
         foreach ($students as $student)
