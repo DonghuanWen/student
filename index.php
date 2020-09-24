@@ -13,7 +13,7 @@ and open the template in the editor.
         body{
             border: 1px solid black;
             text-align: center;
-            color:blue;
+            color:red;
             font-size:10px;
         }
         h1{
