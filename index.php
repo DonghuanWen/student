@@ -9,6 +9,19 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
     </head>
+    <style>
+        body{
+            border: 1px solid black;
+            text-align: center;
+            color:blue;
+            font-size:10px;
+        }
+        h1{
+            color: black;
+            font-size:30px;
+        }
+
+    </style>
     <body  >
         <h1>Student</h1><hr>
         <?php
