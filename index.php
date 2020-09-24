@@ -38,6 +38,16 @@ and open the template in the editor.
         $second->add_status('status', 'Junior');
         $students['a456'] = $second;
 
+        $third = new Student();
+        $third->surname = "Fang";
+        $third->first_name = "Zicong";
+        $third->add_email('home', '13268952285@qq.com');
+        $third->add_email('work1', 'fangzicong@163.com');
+        $third->add_grade(95);
+        $third->add_grade(80);
+        $third->add_grade(80);
+        $third->add_status('status', 'Freshman');
+        $students['z789'] = $third;
 
 
         ksort($students);
