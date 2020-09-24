@@ -9,11 +9,11 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
     </head>
-    <body>
+    <body  >
+        <h1>Student</h1><hr>
         <?php
         include('Student.php');
         $students = array();
-
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -22,7 +22,9 @@ and open the template in the editor.
         $first->add_grade(65);
         $first->add_grade(75);
         $first->add_grade(55);
+        $first->add_status('status', 'Senior');
         $students['j123'] = $first;
+
 
         $second = new Student();
         $second->surname = "Einstein";
@@ -33,21 +35,15 @@ and open the template in the editor.
         $second->add_grade(95);
         $second->add_grade(80);
         $second->add_grade(50);
+        $second->add_status('status', 'Junior');
         $students['a456'] = $second;
-        
-        $second = new Student();
-        $second->surname = "Wen";
-        $second->first_name = "Donghuan";
-        $second->add_email('home', '1342285933@braniacs.com');
-        $second->add_email('work1', 'DonghuanWen@bcit.ca');
-        $second->add_email('work2', '1342285933@qq.com');
-        $second->add_grade(100);
-        $second->add_grade(99);
-        $second->add_grade(98);
-        $students['w567'] = $third;
 
+
+
+        ksort($students);
         foreach ($students as $student)
             echo $student->toString();
         ?>
+
     </body>
 </html>
